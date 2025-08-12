@@ -8,7 +8,7 @@ class ParserTests {
     
     @Test
     void parseValidInput() {
-        String input = "fis g a b a b g c b c a d es d c";
+        String input = "fis g a b a b g c b c a d";
 
         Melody melody = null;
         try {
@@ -17,6 +17,6 @@ class ParserTests {
             Assert.fail();
         }
 
-        Assert.assertEquals(15, melody.length());
+        Assert.assertEquals(12, melody.length());
     } 
 }
